@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: black;
+    background-color: gainsboro;
+    font-family: 'Times New Roman', Times, serif;
+}  
+
+h1,h2,h3 {
+margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    padding: 20px 5% 20px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: yellow;
+    flex-wrap: wrap;
+    align-items: center;
+     box-shadow: 0 6px 30px black ;
+     display: flex;
+}
+
+header h1 {
+    color: blue;
+    margin: 0px;
+    font-size: 32px;
+    padding: 5px 0% 5px 0%;
+    line-height: normal;
+    background-color: palegreen;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;  
+  flex-wrap: wrap;
+}
+
+nav a {
+   padding: 5px 8px;
+   margin-right: 8px;
+   color: blue;
+   font-size: 18px;
+}
+
+nav a:hover{
+    background-color:black;
+    background-size: 100% 100%;
+}
+
+main {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.MainClass {
+    margin-left: 10px;
+    margin-left: 10px;
+    max-width: 75%;
+}
+
+.about-me {
+    margin: 30px 0px;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.about-me h2 {
+    flex: 0% 0% 25%;
+    text-align: right;
+    padding-right: 5px;
+    border-right: 5px solid yellow;
+    font-size: 32px;
+    color: blue;
+    line-height: 1;
+}
+
+.about-me div {
+    flex: 0 0 78%;
+}
+.about-me p {
+    margin-bottom: 25px;
+}
+
+.work{
+    margin: 30px 0px;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;  
+}
+
+.work h2 {
+    flex: 0% 0% 25%;
+    text-align: right;
+    padding-right: 65px;
+    border-right: 5px solid yellow;
+    font-size: 32px;
+    color: blue;
+    line-height: 1;
+}
+
+.work div {
+    flex: 0 0 78%;
+}
+
+.flex {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+.flex-item {
+   border: 10px solid blue; 
+   background-color: yellow;
+   min-height: 150px;
+   max-height: 150px;
+   flex-basis: calc(50%-1em);
+   align-items: flex-end;
+   display: flex;
+   padding: 0 0 25px 0;
+   margin: 0.5em;
+}
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+    .flex-item:hover {
+    background-color: red;
+}
+
+.CSS {
+    flex-basis: 45%;
+}
+
+.JavaScript{
+    flex-basis: 45%;
+}
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    background-color: yellow;
+    
+}
+
+.contact address a {
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+    font-style: italic;
+    display: inline-block;
+}
+
+@media screen and (max-width: 850px)  {
+    header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+    }
+
+    header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    }
+   
+    .about-me h2, .about-me div {
+        flex: 0 0 100%;
+    }
+
+    .about-me h2 {
+        border-bottom: 5px solid yellow ;
+        border-right: none;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }    
+   .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .work h2 {
+        border-bottom: 5px solid yellow ;
+        border-right: none;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 24px;
+        flex: 0 0 100%;
+    }
+
+    .CSS {
+        background-image: url("../Image/CSS.png");
+    }
+}
