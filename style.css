@@ -145,12 +145,24 @@ main {
     background-color: red;
 }
 
+.HTML{
+    background-image: url("./Image/HTML.png");
+    background-size:cover;
+    background-position: center;
+}
+
 .CSS {
     flex-basis: 45%;
+    background-image: url("./Image/CSS.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .JavaScript{
     flex-basis: 45%;
+    background-image: url("./Image/JavaScript.png");
+    background-size: cover;
+    background-position: center;
 }
 .contact address {
     display: flex;
@@ -221,9 +233,5 @@ main {
         text-align: left;
         font-size: 24px;
         flex: 0 0 100%;
-    }
-
-    .CSS {
-        background-image: url("../Image/CSS.png");
     }
 }
